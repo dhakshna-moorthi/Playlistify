@@ -16,7 +16,7 @@ sp = spotipy.Spotify(client_credentials_manager = client_credentials_manager)
 
 genre_predict = pickle.load(open('genre_classification.pkl', 'rb'))
 
-playlist_predict = pickle.load(open('playlist_classification.pkl','rb'))
+playlist_predict = pickle.load(open('playlist_classification_knn.pkl','rb'))
 
 app = Flask(__name__)
 
